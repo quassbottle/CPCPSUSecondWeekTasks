@@ -21,19 +21,22 @@ public class RandomNumberGenerator
 
     public int Next()
     {
-        _state ^= _state << 7;
-        _state ^= _state >> 13;
-        _state ^= _state << 3;
+        _state ^= _state << 13;
+        _state ^= _state >> 17;
+        _state ^= _state << 5;
+        _state = Math.Abs(_state);
         return _state;
     }
 
     public int Next(int topBound)
     {
-        return Next() % topBound;
+        return Next(0, topBound);
     }
 
     public int Next(int lowBound, int topBound)
     {
-        return Next(topBound) + lowBound + 1;
+        int next = Next();
+        int result = (next % (topBound - lowBound)) + lowBound;
+        return result;
     }
 }
