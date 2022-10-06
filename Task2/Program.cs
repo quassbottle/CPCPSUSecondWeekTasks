@@ -1,4 +1,6 @@
-﻿using Task2;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Task2;
 
 var departments = new List<Department>()
 {

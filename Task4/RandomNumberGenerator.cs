@@ -1,4 +1,6 @@
-﻿namespace Task4;
+﻿using System;
+
+namespace Task4;
 
 public class RandomNumberGenerator
 {

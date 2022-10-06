@@ -1,4 +1,5 @@
-﻿using Task4;
+﻿using System;
+using Task4;
 
 var rnd = new RandomNumberGenerator();
 

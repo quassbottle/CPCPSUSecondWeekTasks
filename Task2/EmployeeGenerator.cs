@@ -1,4 +1,7 @@
-﻿namespace Task2;
+﻿using System;
+using System.Collections.Generic;
+
+namespace Task2;
 
 public class EmployeeGenerator
 {

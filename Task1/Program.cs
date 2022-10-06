@@ -1,4 +1,6 @@
-﻿try
+﻿using System;
+
+try
 {
     throw new IndexOutOfRangeException();
 }
